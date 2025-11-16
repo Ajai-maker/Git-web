@@ -1,0 +1,120 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 10;
+  height: 100vh;
+  background: #eef2ff; /* soft bluish */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+/* Main container */
+.container {
+  width: 200%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Login card */
+.card {
+  width: 380px;
+  background: #ffffff;
+  padding: 20px 28px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo */
+.brand {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Form */
+.login-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 3px;
+  color: #6b7280;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Row (Remember me left, Forgot right) */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6b7280;
+}
+
+.help {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+/* Button */
+.primary {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.primary:hover {
+  background: #2563eb;
+}
+
+/* Footer text */
+.note {
+  text-align: center;
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 12px;
+}

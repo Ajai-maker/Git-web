@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Cake2homes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="brand">
+        <img src="logo.png" alt="UIT logo" class="logo" />
+      </div>
+
+      <form id="loginForm" class="login-form" action="#" method="post" onsubmit="return handleSubmit(event)">
+        <label for="username">Username or Email</label>
+        <input id="username" name="username" type="text" autocomplete="username" required />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required />
+
+        <div class="row">
+          <label class="remember">
+            <input type="checkbox" name="remember" />
+            Remember me
+          </label>
+          <a href="#" class="help">Forgot?</a>
+        </div>
+
+        <button type="submit" class="primary">Log in</button>
+
+        <p class="note">This is a static demo. Replace form action to connect to a backend.</p>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    function handleSubmit(e){
+      e.preventDefault();
+      const u = document.getElementById('username').value.trim();
+      if(!u){ alert('Please enter username'); return false; }
+      alert('Login attempted (demo). Username: ' + u);
+      return false;
+    }
+  </script>
+</body>
+</html>
